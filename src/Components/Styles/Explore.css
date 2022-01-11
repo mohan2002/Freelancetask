@@ -1,0 +1,136 @@
+.explore-container
+{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(69, 18, 117);
+    margin-top: 50px;
+}
+
+.explore-hero{
+    width: 68%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.agegroups{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.ages{
+    width: 100px;
+    height: 40px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.courses{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.course-box{
+    height: 230px;
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+.img-box{
+    height: 60%;
+}
+.one-image
+{
+    height: 100%;
+    width: 100%;
+}
+
+.purple-box{
+    height: 40%;
+    background-color: #7781F9;
+    border-top-right-radius: 25px;
+    border-top-left-radius:25px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+    color: rgb(223, 216, 216);
+}
+
+@media all and (max-width:1000px){
+    .explore-hero{
+        width: 70%;
+    }
+    .agegroups{
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+    }
+    .courses{
+        gap: 30px;
+    }
+    .courses{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .agegroups{
+        width: 100%;
+        overflow-y: auto;
+    }
+}
+
+@media all and (max-width:800px){
+    .explore-container{
+        height: 90vh;
+    }
+    .explore-hero{
+        width: 90%;
+        overflow: hidden;
+    }
+    .courses{
+        width: 100%;
+        overflow-x: auto;
+    }
+}
+
+
+.explore-heading{
+    text-align: center;
+}
+
+.ages{
+    cursor: pointer;
+}
+
+.ages-bg{
+    background-color: rgb(69, 18, 117);
+    color:white;
+}
+
+.subscribe-here{
+    padding: 13px 35px;
+    border:none;
+    background-color: rgb(69, 18, 117);
+    color: white;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+}

@@ -1,7 +1,9 @@
 import './App.css';
+import Awesome from './Components/Awesome';
 import Banner from './Components/Banner';
 import Explore from './Components/Explore';
 import Ourcourses from './Components/Ourcourses';
+import Philosophies from './Components/Philosophies';
 
 function App() {
   return (
@@ -12,8 +14,10 @@ function App() {
       <Ourcourses/>
       {/* Explore */}
       <Explore/>
-      {/* We */}
+      {/* Awesome */}
+      <Awesome/>
       {/* Philosopies */}
+      <Philosophies/>
       {/* Contact us */}
       {/* Footer */}
     </div>
