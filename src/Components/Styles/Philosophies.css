@@ -96,4 +96,7 @@
         overflow-x:auto;
         width: 100%;
     }
+    .philosophy-boxes::-webkit-scrollbar {
+        display: none;
+    }
 }
