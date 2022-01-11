@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "./Styles/Banner.css"
+import dimage from "../Assets/3d.jpg"
 
 function Banner() {
     const[open,setopen] = useState(false);
@@ -40,7 +41,16 @@ function Banner() {
 
 
         <div className='main-container'>
-
+            <div className='main-inner'>
+                <div className="right-content">
+                    <h1 className="heading">Welcome to <span className='child'>Child's</span> Leadership Company</h1>
+                    <p className="para"> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
+                    <button className="explorebtn">Explore more</button>
+                </div>
+                <div className="dimages">
+                    <img className="dimage" src={dimage}/>
+                </div>
+            </div>
         </div>
     </div>
   );
